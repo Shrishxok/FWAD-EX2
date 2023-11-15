@@ -20,7 +20,6 @@ Execute Django admin and create 10 Football players
 
 ## PROGRAM
 ## models.py
-
 from django.db import models
 from django.contrib import admin
 class Player(models.Model):
@@ -32,7 +31,6 @@ class Player(models.Model):
 
 class Player_Admin(admin.ModelAdmin):
     list_display=('Player_Name','Jersy_No','Team','Height','Position')
-    
 ## admin.py
 from django.contrib import admin
 from .models import Player,Player_Admin
